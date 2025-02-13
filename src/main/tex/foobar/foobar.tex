@@ -1,0 +1,21 @@
+\documentclass{article}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Author:
+% Version: 2025.2
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Define counters
+\newcount\thenumber
+
+% Define command
+\newcommand{\foobar}[1]{%
+}
+
+\begin{document}
+
+\thenumber=37
+\section*{FooBar for numbers 1--\the\thenumber}
+
+\foobar{\thenumber}
+
+\end{document}
