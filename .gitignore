@@ -554,3 +554,6 @@ gradle-app.setting
 *.hprof
 
 # End of https://www.toptal.com/developers/gitignore/api/java,gradle,latex,python,visualstudiocode
+
+### Include Lox source files
+!/src/main/lox/**/*

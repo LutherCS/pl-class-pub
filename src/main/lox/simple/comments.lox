@@ -1,0 +1,7 @@
+/*
+This is a simple Lox file
+
+Handle nested /* comments */ and new lines
+
+*/
+print "Project 2";
