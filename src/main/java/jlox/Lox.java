@@ -62,14 +62,16 @@ public class Lox {
         // }
         // Parser is done
         Parser parser = new Parser(tokens);
-        Expr expression = parser.parse();
+        // Expr expression = parser.parse();
 
         // Stop if there was a syntax error.
         if (hadError)
             return;
         // Parser
         // System.out.println(new AstPrinter().print(expression));
-        interpreter.interpret(expression);
+        // Statements
+        List<Stmt> statements = parser.parse();
+        interpreter.interpret(statements);
     }
 
     static void error(int line, String message) {
